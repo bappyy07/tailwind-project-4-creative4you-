@@ -1,11 +1,74 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/style.css" rel="stylesheet">
 </head>
-<body>
-  
+
+<body class="font-jakarta">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Left: Logo -->
+        <div class="flex-shrink-0">
+          <img src="./src/img/c4u full logo_2022 1.png" alt="logo">
+        </div>
+
+        <!-- Center: Navigation links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-[#f44335] hover:scale-105 transition-all">Home</a>
+          <a href="#" class="text-gray-700 hover:text-[#f44335] hover:scale-105 transition-all">Contact</a>
+          <a href="#" class="text-gray-700 hover:text-[#f44335] hover:scale-105 transition-all">About Us</a>
+          <a href="#" class="text-gray-700 hover:text-[#f44235e2] hover:scale-105 transition-all">Up-skills</a>
+        </div>
+
+        <!-- Right: Button -->
+        <div class="hidden md:flex">
+          <button class="bg-[#f44335] text-white px-4 py-2 rounded hover:bg-[#f44235d8] hover:scale-105 transition-all">
+            Register Now
+          </button>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-[#f44235e2] focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="#" class="block text-gray-700 hover:text-[#F44335]">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-[#F44335]">Contact</a>
+      <a href="#" class="block text-gray-700 hover:text-[#F44335]">About Us</a>
+      <a href="#" class="block text-gray-700 hover:text-[#F44335]">Up-skills</a>
+      <button class="w-full mt-2 bg-[#F44335] text-white px-4 py-2 rounded hover:bg-[#f44235d8]">
+        Register Now
+      </button>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <script>
+    // Toggle Mobile Menu
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
+
 </html>
