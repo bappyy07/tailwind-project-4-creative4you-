@@ -5,3 +5,8 @@
 @theme {
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
   }
+
+
+  .hero-bg{
+    background-image: url(./img/hero.png);
+  }
