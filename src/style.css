@@ -13,3 +13,12 @@
   .mission-bg{
     background-image: url(./img/oval.png) ;
   }
+  .one-bg{
+    background-image: url(./img/one.png);
+  }
+  .two-bg{
+    background-image: url(./img/two.png);
+  }
+  .three-bg{
+    background-image: url(./img/three.png);
+  }
